@@ -1,0 +1,33 @@
+{
+    "name": "Ionic frontend",
+    "image": "ionic-frontend:latest",
+    "context": "..",
+    "service": "mobile",
+    "dockerComposeFile": "../docker-compose.yml",
+    "workspaceFolder": "/app",
+    "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/app,type=bind,consistency=delegated",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "TabNine.tabnine-vscode",
+      "usernamehw.errorlens",
+      "eamodio.gitlens",
+      "adpyke.codesnap",
+      "Gruntfuggly.todo-tree",
+      "pflannery.vscode-versionlens",
+      "Angular.ng-template",
+      "johnpapa.Angular2",
+      "cyrilletuzi.angular-schematics",
+      "formulahendry.auto-close-tag",
+      "steoates.autoimport",
+      "formulahendry.auto-rename-tag",
+      "usernamehw.errorlens",
+      "pmneo.tsimporter",
+      "quicktype.quicktype",
+      "pmneo.tsimporter",
+      "aaron-bond.better-comments",
+      "fivethree.vscode-ionic-snippets"
+    ]
+}
