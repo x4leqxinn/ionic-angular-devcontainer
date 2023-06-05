@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  mobile:
+    build:
+      context: .
+    image: ionic-frontend:latest
+    container_name: ionic-frontend
+    volumes: 
+      - ./workspace:/app
+    ports:
+      - 8100:8100
